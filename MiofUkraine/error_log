@@ -1,0 +1,12 @@
+[27-Mar-2020 18:43:25 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/z62627/public_html/miofukraine.com/wp-content/themes/MiofUkraine/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/z62627/public_html/miofukraine.com/wp-content/themes/MiofUkraine/index.php on line 18
+[27-Mar-2020 20:53:46 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/z62627/public_html/miofukraine.com/wp-content/themes/MiofUkraine/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/z62627/public_html/miofukraine.com/wp-content/themes/MiofUkraine/index.php on line 18
+[27-Mar-2020 20:54:40 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/z62627/public_html/miofukraine.com/wp-content/themes/MiofUkraine/index.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/z62627/public_html/miofukraine.com/wp-content/themes/MiofUkraine/index.php on line 18
