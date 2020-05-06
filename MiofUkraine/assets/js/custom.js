@@ -3,32 +3,13 @@ jQuery(document).ready(function($) {
   $('.bwg_load_btn').html('<span>Показати більше</span>');
 
     //----------------------Gallary tabs-------------
-        
-    $('#first-button').click(function() {
-        $(this).addClass('year-btn-active');
-        $('#second-button, #third-button, #four-button').removeClass('year-btn-active');
-        $('#second-gallary, #third-gallary, #four-gallary').fadeOut(0);
-        $('#first-gallary').fadeIn(500);
-    });
-    $('#second-button').click(function() {
-        $(this).addClass('year-btn-active');
-        $('#first-button, #third-button, #four-button').removeClass('year-btn-active');
-        $('#first-gallary, #third-gallary,#four-gallary').fadeOut(0);
-        $('#second-gallary').fadeIn(500);
-    });
-    $('#third-button').click(function() {
-        $(this).addClass('year-btn-active');
-        $('#first-button, #second-button, #four-button').removeClass('year-btn-active');
-        $('#first-gallary, #second-gallary, #four-gallary').fadeOut(0);
-        $('#third-gallary').fadeIn(500);
-    });
-    $('#four-button').click(function() {
-      $(this).addClass('year-btn-active');
-      $('#first-button, #second-button, #third-button').removeClass('year-btn-active');
-      $('#first-gallary, #second-gallary, #third-gallary').fadeOut(0);
-      $('#four-gallary').fadeIn(500);
-    });
 
+      $('ul.gallary-years-list').on('click', 'li:not(.year-btn-active)', function() {
+      $(this)
+        .addClass('year-btn-active').siblings().removeClass('year-btn-active')
+        .closest('section.gallary-years').find('li.gallary-list-item').removeClass('gallary-item-active').eq($(this).index()).addClass('gallary-item-active');
+    });
+   
     // -----------------------Organization slider---------
 
     $('.organizator-slider').slick({

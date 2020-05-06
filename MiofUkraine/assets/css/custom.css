@@ -245,12 +245,13 @@ Gallery page
 .sl-overlay {
 	background: #000;
 }
-.year-btn-active {
+li.year-btn-active {
 	background-color: #001c1f ;
 	outline: none;
 }
-.none {
-	display: none;
+.gallary-list .gallary-item-active{
+	display: block;
+	transition: 0.5s;
 }
 button:focus {
 	outline: none;
@@ -273,6 +274,10 @@ button:focus {
 	margin: 0 auto;
 	padding: 2px;
 }
+.gallary-list li {
+	display: none;
+	transition: 0.3s;
+}
 .video {
 	margin: 50px auto;
 	padding: 3px;
@@ -284,7 +289,12 @@ button:focus {
 	max-width: 450px;
 }
 .gallary-years-btn {
-	border-radius: 50px; 
+	border-radius: 50px;
+	padding: 10px 30px; 
+	color: #fff;
+	cursor: pointer;
+	background-color: #004c56;
+	transition: .2s all;
 }
 
 .gallary-years-btn:hover {
@@ -390,7 +400,7 @@ Composers jury
 }
 .jury-slider .jury-item {
 	position: relative;
-	height: 350px;
+	height: 300px;
 	margin: 5px;
 	overflow: hidden;
 	border-radius: 10px;
@@ -611,9 +621,6 @@ Media query
 	}
 	.jury-overlay p {
 		font-size: 0.9rem;
-	}
-	.jury-slider .jury-item {
-	height: 300px;
 	}
 	.press-content {
 		padding: 0px 15px;

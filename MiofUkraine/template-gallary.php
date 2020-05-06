@@ -17,19 +17,19 @@ Template Name: Галерея
             $four_btn = get_field('gallary_title4');
 
             if(!empty($first_btn)){ ?>
-                <li><button id="first-button" class="gallary-years-btn"><?= $first_btn ?></button></li>
+                <li class="gallary-years-btn"><?= $first_btn ?></li>
             <?php }
 
              if(!empty($second_btn)){ ?>
-                <li><button id="second-button" class="gallary-years-btn"><?= $second_btn ?></button></li>
+                <li class="gallary-years-btn"><?= $second_btn ?></li>
             <?php }
           
              if(!empty($third_btn)){ ?>
-                <li><button id="third-button" class="gallary-years-btn"><?= $third_btn ?></button></li>
+                <li class="gallary-years-btn"><?= $third_btn ?></li>
             <?php }
 
             if(!empty($four_btn)){ ?>
-                <li><button id="four-button" class="year-btn-active gallary-years-btn"><?= $four_btn ?></button></li>
+                <li class="gallary-years-btn year-btn-active"><?= $four_btn ?></li>
             <?php }
             ?>
             
@@ -42,19 +42,19 @@ Template Name: Галерея
             $four_gallary = get_field('gallary_item4');
 
             if(isset($first_btn)){ ?>
-                <li id="first-gallary" class="none"><?= $first_gallary ?></li>
+                <li class="gallary-list-item"><?= $first_gallary ?></li>
             <?php }
             
             if(isset($first_btn)){ ?>
-                <li id="second-gallary" class="none"><?= $second_gallary ?></li>
+                <li class="gallary-list-item"><?= $second_gallary ?></li>
             <?php }
 
             if(isset($first_btn)){ ?>
-                <li id="third-gallary" class="none"><?= $third_gallary ?></li>
+                <li class="gallary-list-item"><?= $third_gallary ?></li>
             <?php }
 
             if(isset($first_btn)){ ?>
-                <li id="four-gallary"><?= $four_gallary ?></li>
+                <li class="gallary-list-item gallary-item-active"><?= $four_gallary ?></li>
             <?php }
             ?>
         </ul>

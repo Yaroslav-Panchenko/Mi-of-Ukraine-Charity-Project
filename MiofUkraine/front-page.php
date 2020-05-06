@@ -70,7 +70,11 @@ get_header(); ?>
 			if( have_rows('organizators_slider') ):
 				while ( have_rows('organizators_slider') ) : the_row(); ?>
 
-				<li style="background: url(<?php the_sub_field('organizators_img')?>) no-repeat center top/cover">
+				<li>
+					<?php
+					$img = get_sub_field('organizators_img');
+					?>
+					<img src="<?= esc_url($img['url']); ?>" alt="<?= esc_attr($img['alt']); ?>">
 					<div class="organizator-description">
 						<h3><?php the_sub_field('organizators_name') ?></h3>
 						<p><?php the_sub_field('organizators_description') ?></p>

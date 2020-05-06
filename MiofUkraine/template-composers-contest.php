@@ -33,7 +33,11 @@ Template Name: Конкурс композиторів
         if( have_rows('jury_slider') ):
         while ( have_rows('jury_slider') ) : the_row(); ?>
             
-        <li style="background: url(<?php the_sub_field('jury_item_img') ?>) no-repeat center top/cover" class="jury-item">
+        <li class="jury-item">
+            <?php
+            $img = get_sub_field('jury_item_img');
+            ?>
+			<img src="<?= esc_url($img['url']); ?>" alt="<?= esc_attr($img['alt']); ?>">
             <div class="jury-overlay">
                 <h3><?php the_sub_field('jury_item_name') ?></h3>
                 <p><?php the_sub_field('jury_item_description') ?></p>
